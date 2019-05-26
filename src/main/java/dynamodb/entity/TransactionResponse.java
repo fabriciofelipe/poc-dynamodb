@@ -14,10 +14,11 @@ import java.time.LocalDateTime;
 @DynamoDBTable(tableName="Transaction")
 public class TransactionResponse {
 
-    private Long id;
-
     @DynamoDBHashKey
     private String code;
+
+    @DynamoDBAttribute
+    private Long id;
 
     @DynamoDBAttribute
     private LocalDateTime createDate;

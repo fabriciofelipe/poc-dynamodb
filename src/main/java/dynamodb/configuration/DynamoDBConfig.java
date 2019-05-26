@@ -23,6 +23,7 @@ public class DynamoDBConfig {
     private String secretKey;
 
     @Bean
+    @SuppressWarnings("deprecation")
     public AmazonDynamoDB amazonDynamoDB() {
         AmazonDynamoDB amazonDynamoDB = new AmazonDynamoDBClient(new BasicAWSCredentials(accessKey, secretKey));
         if (!StringUtils.isEmpty(amazonDynamoDB)){

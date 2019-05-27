@@ -9,9 +9,8 @@ import lombok.Data;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-@Builder
 @Data
-@DynamoDBTable(tableName="Transaction")
+@DynamoDBTable(tableName="transaction")
 public class TransactionResponse {
 
     @DynamoDBHashKey

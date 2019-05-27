@@ -14,10 +14,9 @@ public class TransactionService {
 
     private final TransactionRepository transactionRepository;
 
-
     public List<TransactionResponse> findTransactions(List<String> transactionsCode) {
         return Optional.of(transactionsCode)
-                .map(transactionRepository::findByCode)
+                .map(transactionRepository::findByCodeIn)
                 .orElse(null);
     }
 }

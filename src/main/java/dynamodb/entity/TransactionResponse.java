@@ -3,7 +3,6 @@ package dynamodb.entity;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
-import lombok.Builder;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -14,7 +13,7 @@ import java.time.LocalDateTime;
 public class TransactionResponse {
 
     @DynamoDBHashKey
-    private String code;
+    private String transactionCode;
 
     @DynamoDBAttribute
     private Long id;

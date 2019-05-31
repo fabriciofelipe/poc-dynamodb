@@ -9,6 +9,6 @@ import java.util.List;
 @EnableScan
 public interface TransactionRepository extends CrudRepository<TransactionResponse, String> {
 
-    List<TransactionResponse> findByCodeIn(List<String> transactionCode);
+    List<TransactionResponse> findByTransactionCodeIn(List<String> transactionCode);
 
 }

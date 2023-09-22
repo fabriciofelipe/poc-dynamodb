@@ -19,7 +19,6 @@
 		<aws-java-sdk-dynamodb.version>1.11.408</aws-java-sdk-dynamodb.version>
 		<spring-cloud.version>Finchley.SR1</spring-cloud.version>
 	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
